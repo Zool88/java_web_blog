@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${favicon}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+
+<header th:insert="blocks/header :: header"></header>
+
+
+<div class="container mt-5">
+    <h1 align="center"><p th:text="${title}"/></h1>
+</div>
+
+
+<div>
+    <img class="marginauto" th:src="@{images/PRM.jpg}" th:width=${logoWidth} th:height=${logoHeight} alt="RPM"/>
+</div>
+
+
+<footer th:insert="blocks/footer :: footer"></footer>
+
+<style>
+      .marginauto {
+          margin: 10px auto 20px;
+          display: block;
+      }
+  </style>
+</body>
+</html>

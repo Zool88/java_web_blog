@@ -1,0 +1,3 @@
+https://spring.io/ - документация spring
+https://getbootstrap.com/ - шаблоны HTML
+https://www.bootstrapcdn.com/ - стили CSS
